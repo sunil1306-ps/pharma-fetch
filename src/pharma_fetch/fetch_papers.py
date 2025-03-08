@@ -8,13 +8,13 @@ def fetch_papers(query: str, max_results: int = 10, debug: bool = False) -> List
     if debug:
         print("Fetching papers for query:", query)
 
-    Entrez.email = "your_email@example.com"  # Set your email for PubMed API
+    Entrez.email = "saragadamsunil7@gmail.com"
     handle = Entrez.esearch(db="pubmed", term=query, retmax=max_results)
     record = Entrez.read(handle)
     handle.close()
 
     if debug:
-        print("PubMed IDs found:", record["IdList"])  # Debug: Print PubMed IDs
+        print("PubMed IDs found:", record["IdList"])
 
     paper_ids = record["IdList"]
     papers = []
@@ -28,7 +28,7 @@ def fetch_papers(query: str, max_results: int = 10, debug: bool = False) -> List
         handle.close()
 
         if debug:
-            print("Raw paper data for ID", paper_id, ":", paper_data)  # Debug: Print raw paper data
+            print("Raw paper data for ID", paper_id, ":", paper_data) 
 
         # Extract relevant fields from the paper data
         try:
@@ -43,7 +43,7 @@ def fetch_papers(query: str, max_results: int = 10, debug: bool = False) -> List
             # Extract publication date
             publication_date = ""
             article_dates = article.get("ArticleDate", [])
-            if article_dates:  # Check if ArticleDate exists and is not empty
+            if article_dates: 
                 pub_date = article_dates[0]
                 publication_date = f"{pub_date.get('Year', '')}-{pub_date.get('Month', '')}-{pub_date.get('Day', '')}"
 
@@ -64,7 +64,7 @@ def fetch_papers(query: str, max_results: int = 10, debug: bool = False) -> List
                     for identifier in author["Identifier"]:
                         # Handle StringElement type
                         if hasattr(identifier, "attributes") and identifier.attributes.get("Source", "") == "Email":
-                            corresponding_email = str(identifier)  # Convert StringElement to string
+                            corresponding_email = str(identifier)
                             break
 
             # Append the extracted data to the papers list
