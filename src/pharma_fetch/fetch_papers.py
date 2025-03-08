@@ -20,7 +20,6 @@ def fetch_papers(query: str, max_results: int = 10, debug: bool = False) -> List
         record = Entrez.read(handle)
     except:
         print(f"Error searching for keyword {query}: {e}")
-        continue
     finally:
         handle.close()
 
@@ -35,13 +34,11 @@ def fetch_papers(query: str, max_results: int = 10, debug: bool = False) -> List
             print("Fetching details for paper ID:", paper_id)
 
         try:
-            handle = Entrez.efetch(db="pubmed", id=','.join(paper_ids), retmode="xml")
+            handle = Entrez.efetch(db="pubmed", id=paper_id, retmode="xml")
             paper_data = Entrez.read(handle)
         except:
             print(f"Error fetching paper {paper_id}: {e}")
             continue
-        finally:
-            handle.close()
 
         if debug:
             print("Raw paper data for ID", paper_id, ":", paper_data)
