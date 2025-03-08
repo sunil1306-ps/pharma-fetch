@@ -212,6 +212,7 @@ PubmedID,Title,PublicationDate,NonAcademicAuthors,CompanyAffiliations,Correspond
 - [Biopython Documentation](https://biopython.org/)
 - [PubMed API](https://pubmed.ncbi.nlm.nih.gov/)
 - [Poetry Documentation](https://python-poetry.org/docs/)
+- [DeepSeek] (https://chat.deepseek.com/)
 
 
 ---
