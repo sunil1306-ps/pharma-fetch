@@ -12,8 +12,9 @@ A Python tool to fetch and filter research papers from PubMed with pharmaceutica
 4. [Command-Line Options](#command-line-options)
 5. [Output](#output)
 6. [Tools and Libraries](#tools-and-libraries)
-7. [Contributing](#contributing)
-8. [License](#license)
+7. [Non Functional Requirements](#non-functional-requirements)
+8. [Contributing](#contributing)
+9. [License](#license)
 
 ---
 
@@ -124,6 +125,30 @@ PubmedID,Title,PublicationDate,NonAcademicAuthors,CompanyAffiliations,Correspond
 - **Biopython**: Used to interact with the PubMed API.
 - **Pandas**: Used to generate the CSV file.
 - **argparse**: Used for command-line argument parsing.
+
+---
+
+## Non-Functional Requirements
+
+### Typed Python
+- Added type hints to all functions, arguments, and return values using Python’s `typing` module.
+- Ensured type consistency across all modules.
+
+### Performance
+- Optimized API calls and data processing for efficiency.
+- Added a retry mechanism for transient API failures.
+
+### Readability
+- Added docstrings, meaningful variable names, and comments for clarity.
+- Formatted code consistently for better readability.
+
+### Organization
+- Modularized the code into separate files, each handling a specific task.
+- Followed the Single Responsibility Principle (SRP).
+
+### Robustness
+- Added error handling for invalid queries, API failures, and missing data.
+- Used `.get()` with default values to handle missing fields gracefully.
 
 ### Relevant Links
 
