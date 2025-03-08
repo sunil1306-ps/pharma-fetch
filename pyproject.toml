@@ -1,9 +1,9 @@
 [project]
 name = "pharma-fetch"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Python tool to fetch and filter research papers from PubMed with pharmaceutical/biotech affiliations."
 authors = [
-    {name = "sunil", email = "itsmesunil13@gmail.com"}
+    {name = "sunil", email = "saragadamsunil7@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.12"
