@@ -136,5 +136,5 @@ PubmedID,Title,PublicationDate,NonAcademicAuthors,CompanyAffiliations,Correspond
 
 ## Contact
 
-For questions or feedback, please contact [Your Name](mailto:saragadamsunil7@gmail.com).
+For questions or feedback, please contact [Saragadam Sunil](mailto:saragadamsunil7@gmail.com).
 
