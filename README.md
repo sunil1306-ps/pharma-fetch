@@ -67,7 +67,7 @@ To install the `pharma-fetch` package from Test PyPI, follow these steps:
    Use `pip` to install the package from Test PyPI. Since Test PyPI does not host all dependencies, you need to specify both Test PyPI and the official PyPI as package sources.
 
    ```bash
-   pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ pharma-fetch
+   pip install -i "https://test.pypi.org/simple/" --extra-index-url "https://pypi.org/simple/ pharma-fetch==0.1.1"
    ```
 
 2. **Verify the installation**:
