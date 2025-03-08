@@ -213,6 +213,7 @@ PubmedID,Title,PublicationDate,NonAcademicAuthors,CompanyAffiliations,Correspond
 - [PubMed API](https://pubmed.ncbi.nlm.nih.gov/)
 - [Poetry Documentation](https://python-poetry.org/docs/)
 - [DeepSeek](https://chat.deepseek.com/)
+- For detailed conversation with LLM visit [chat](https://chat.jaay.fun/aw5y8s)
 
 
 ---
