@@ -176,6 +176,7 @@ PubmedID,Title,PublicationDate,NonAcademicAuthors,CompanyAffiliations,Correspond
 
 ## Tools and Libraries
 
+- [DeepSeek] (https://chat.deepseek.com/)
 - **Python**: The program is written in Python 3.12.
 - **Poetry**: Used for dependency management and packaging.
 - **Biopython**: Used to interact with the PubMed API.
