@@ -16,6 +16,7 @@ python = "^3.12"
 requests = "^2.32.3"
 pandas = "^2.0.0"
 biopython = "^1.85"
+python-dotenv = "^1.0.1"
 
 [tool.poetry.scripts]
 get-papers-list = "pharma_fetch.cli:main"

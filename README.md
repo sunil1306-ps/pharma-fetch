@@ -8,13 +8,14 @@ A Python tool to fetch and filter research papers from PubMed with pharmaceutica
 
 1. [Overview](#overview)
 2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Command-Line Options](#command-line-options)
-5. [Output](#output)
-6. [Tools and Libraries](#tools-and-libraries)
-7. [Non Functional Requirements](#non-functional-requirements)
-8. [Contributing](#contributing)
-9. [License](#license)
+3. [Installation from Test PyPI](#installation-from-test-pypi)
+4. [Usage](#usage)
+5. [Command-Line Options](#command-line-options)
+6. [Output](#output)
+7. [Tools and Libraries](#tools-and-libraries)
+8. [Non Functional Requirements](#non-functional-requirements)
+9. [Contributing](#contributing)
+10. [License](#license)
 
 ---
 
@@ -55,6 +56,61 @@ Pharma-Fetch is a command-line tool that:
    ```bash
    poetry shell
    ```
+
+---
+
+## Installation from Test PyPI
+
+To install the `pharma-fetch` package from Test PyPI, follow these steps:
+
+1. **Install the package**:
+   Use `pip` to install the package from Test PyPI. Since Test PyPI does not host all dependencies, you need to specify both Test PyPI and the official PyPI as package sources.
+
+   ```bash
+   pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ pharma-fetch
+   ```
+
+2. **Verify the installation**:
+   After installation, verify that the `get-papers-list` command is available:
+
+   ```bash
+   get-papers-list --help
+   ```
+
+   This should display the help message for the command.
+
+3. **Run the tool**:
+   Use the `get-papers-list` command to fetch and filter research papers. For example:
+
+   ```bash
+   get-papers-list "cancer treatment" -f results.csv
+   ```
+
+   This will fetch papers related to "cancer treatment" and save the results to `results.csv`.
+
+**NOTE**:
+**Ensure the Script is in Your PATH**
+If the script is not found, it means the installation directory is not in your system’s `PATH`. Here’s how to fix it:
+
+#### On Windows:
+1. Find the `Scripts` directory where Python installed the script. It’s usually located in:
+   ```
+   C:\Python312\Scripts\
+   ```
+   or
+   ```
+   C:\Users\<YourUsername>\AppData\Local\Programs\Python\Python312\Scripts\
+   ```
+
+2. Add this directory to your system’s `PATH`:
+   - Open the Start menu and search for "Environment Variables".
+   - Click "Edit the system environment variables".
+   - In the System Properties window, click "Environment Variables".
+   - Under "System variables", find the `Path` variable and click "Edit".
+   - Add the `Scripts` directory to the list (e.g., `C:\Python312\Scripts\`).
+
+3. Restart your terminal and try running `get-papers-list` again.
+
 
 ---
 
