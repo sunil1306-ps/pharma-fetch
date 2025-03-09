@@ -1,6 +1,6 @@
 [project]
 name = "pharma-fetch"
-version = "0.1.1"
+version = "0.1.2"
 description = "A Python tool to fetch and filter research papers from PubMed with pharmaceutical/biotech affiliations."
 authors = [
     {name = "sunil", email = "saragadamsunil7@gmail.com"}
