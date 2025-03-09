@@ -14,8 +14,7 @@ A Python tool to fetch and filter research papers from PubMed with pharmaceutica
 6. [Output](#output)
 7. [Tools and Libraries](#tools-and-libraries)
 8. [Non Functional Requirements](#non-functional-requirements)
-9. [Contributing](#contributing)
-10. [License](#license)
+9. [Contact](#contact)
 
 ---
 
