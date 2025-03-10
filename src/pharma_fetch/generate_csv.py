@@ -29,7 +29,7 @@ def generate_csv(papers: List[Dict[str, Any]], output_file: str = "output.csv", 
             "PubmedID": pubmed_id,
             "Title": title if title else "Not Available",
             "PublicationDate": publication_date if publication_date else None,
-            "NonAcademicAuthors": "; ".join(author["name"] for author in non_academic_authors),
+            "NonAcademicAuthors": "; ".join(author["name"] for author in non_academic_authors) if non_academic_authors else "Not Available",
             "CompanyAffiliations": "; ".join(company_affiliations) if company_affiliations else "Not Available",
             "CorrespondingAuthorEmail": corresponding_email
         })
